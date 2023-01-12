@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- 当前文档的字符集采用utf-8 -->
+    <meta charset="UTF-8" />
+    <!-- 指定IE8浏览器去模拟某个特定版本的浏览器的渲染方式，以此来解决部分兼容问题 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--  width:可视区域的宽度，值可为数字或关键词device-width -->
+    <!--  initial-scale:页面首次被显示是可视区域的缩放级别，取值1.0则页面按实际尺寸显示，无任何缩放 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 定义文档的标题，<title> 标签是 <head> 标签中唯一要求包含的东西 -->
+    <title>Document</title>
+    <!-- 引入CSS文件 -->
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="left">
+        <canvas id="canvas"></canvas>
+      </div>
+
+      <div id="mid">
+        <form method="get">
+          <textarea id="text" cols="30" rows="10"></textarea>
+        </form>
+        <div id="parameter">
+          <h5 id="patch"></h5>
+          <h3>机床参数：</h3>
+          <h4 id="rotate"></h4>
+          <h4 id="rpm"></h4>
+          <h4 id="speed"></h4>
+          <h4 id="lqy"></h4>
+        </div>
+      </div>
+
+      <div id="right">
+        <br />
+        <br />
+        <button id="btnIm1">导入NC代码1</button>
+        <button id="btnIm2">导入NC代码2</button>
+        <button id="btnIm3">导入NC代码3</button>
+        <br />
+        <button id="btnDraw">绘制加工路径</button>
+      </div>
+    </div>
+    <script src="main.js"></script>
+    <script></script>
+  </body>
+</html>
